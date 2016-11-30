@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'sessions/new'
   post '/' => 'sessions#create_patient'
   get 'patients/show'
+  get 'patients/new'
   get '/logout' => 'sessions#destroy_patient'
   resource :sessions
   resource :patients
